@@ -1,7 +1,7 @@
 # Football Analytics with Python
 ### A Complete Course — From Zero to Publication-Ready Analysis
 
-**By HackrLife · BarcaFutbol Analytics**
+**By HackrLife Media LLC · BarcaFutbol Analytics**
 
 > *You don't need to be a data scientist to think like one.*
 > *You need to ask the right question, find the right data, and build the right chart.*
@@ -100,7 +100,7 @@ Just Python, pandas, matplotlib, and a willingness to think carefully about foot
 ## How to Use This Course
 
 ### Option 1 — Google Colab (Recommended for Beginners)
-Click any chapter badge below to open it directly in Google Colab.
+Click any chapter badge to open it directly in Google Colab.
 No installation required. Just click, read, and run the cells.
 
 [![Open Chapter 01 in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/HackrLife/Football-Analytics/blob/main/The-Football-Analytics-Course/Chapter-01-The-Analytical-Question/Chapter_01_The_Analytical_Question.ipynb)
@@ -120,6 +120,42 @@ jupyter notebook
 
 ---
 
+## The Data
+
+### What's Included in This Course
+
+We have supplied two ready-to-use datasets that power all chapters in this course:
+
+- **`barcafutbol_master.csv`** — the primary course dataset. Contains career statistics
+  for Lamine Yamal and Bukayo Saka across multiple seasons, plus a 2025/26 peer group
+  of 16 top European wide forwards. All values are per-90-minute averages.
+
+- **`barcafutbol_match.csv`** — match-level data for the Atlético Madrid vs Barcelona
+  La Liga fixture (April 2026), used in the match review chapters.
+
+Both datasets have been compiled, cleaned and verified from professional football
+data platforms including Sofascore, FotMob and Wyscout. They are ready to load
+and use immediately — no data cleaning required.
+
+### Where to Find Your Own Data
+
+Once you have completed the course and want to build your own analyses,
+here are the best free and public data sources:
+
+| Source | What It Contains | Best For |
+|--------|-----------------|----------|
+| [StatsBomb Open Data](https://github.com/statsbomb/open-data) | Free event-level data for selected competitions | Advanced match analysis, xG models |
+| [FBref](https://fbref.com) | Comprehensive player and team stats, all major leagues | Season stats, player comparison |
+| [Kaggle Football Datasets](https://www.kaggle.com/datasets?search=football) | Community-curated datasets, historical data | Exploratory analysis, modelling |
+| [football-data.co.uk](https://football-data.co.uk) | Historical match results and odds data | Regression, prediction models |
+| [understat.com](https://understat.com) | xG data for top European leagues | Expected metrics analysis |
+| [transfermarkt](https://transfermarkt.com) | Market values, career history, transfer data | Career arc, valuation analysis |
+
+Chapter 2 walks through how to collect, structure and verify data from any of
+these sources into a clean CSV ready for analysis.
+
+---
+
 ## The Reusability Principle
 
 Every chart in this course follows the same structure:
@@ -127,19 +163,19 @@ Every chart in this course follows the same structure:
 ```python
 # ── 1. DATA ─────────────────────────────────────────────
 # Change these values to use any players, any stats
-player_1_name = 'Lamine Yamal'
-player_2_name = 'Bukayo Saka'
-metric_values = [88, 82, 92, 75, 72, 90]   # ← change these
+player_1_name   = 'Lamine Yamal'
+player_2_name   = 'Bukayo Saka'
+metric_values   = [88, 82, 92, 75, 72, 90]   # ← change these numbers
 
 # ── 2. COLOURS ──────────────────────────────────────────
-# Change these to match any team or publication
-player_1_colour = '#A50044'   # ← change this
-player_2_colour = '#f0f6fc'   # ← change this
+# Change these to match any team or publication brand
+player_1_colour = '#A50044'   # ← change this hex code
+player_2_colour = '#f0f6fc'   # ← change this hex code
 
 # ── 3. CHART ────────────────────────────────────────────
 # This section never changes — it is the reusable template
-build_chart(player_1_name, player_2_name, metric_values,
-            player_1_colour, player_2_colour)
+build_chart(player_1_name, player_2_name,
+            metric_values, player_1_colour, player_2_colour)
 ```
 
 **Three things to change. Everything else stays the same.**
@@ -150,11 +186,11 @@ in any league in under 5 minutes.
 
 ## The Design System
 
-All charts in this course share a consistent visual identity — the
-BarcaFutbol Analytics design system, explained fully in Chapter 3.
+All charts in this course share a consistent visual identity —
+the BarcaFutbol Analytics design system, explained fully in Chapter 3.
 
 ```python
-# Copy this palette into any notebook and your charts will look professional
+# Copy this palette into any notebook — your charts will look professional
 
 BG      = '#0d1117'   # background — near-black
 WHITE   = '#f0f6fc'   # all text and labels
@@ -170,75 +206,70 @@ The same system used in charts that people pay to read.
 
 ---
 
-## The Data
-
-All chapters use real football statistics sourced from
-[Sofascore](https://sofascore.com), cleaned and verified.
-
-The master dataset (`data/barcafutbol_master.csv`) contains:
-- Lamine Yamal — 4 seasons of career data (2022/23–2025/26)
-- Bukayo Saka — 8 seasons of career data (2018/19–2025/26)
-- 14 peer wide forwards — 2025/26 season data for scatter plot peer groups
-
-All values are **per 90 minutes** — the correct unit for player comparison
-regardless of minutes played or games started.
-
----
-
 ## What Makes This Course Different
 
 **Most data science courses teach skills.**
 This course teaches skills *in service of arguments.*
 
 Every chapter answers a real football question that had a genuinely uncertain
-answer before the analysis was built. The student doesn't learn how to make a
-radar chart — they learn how to use a radar chart to argue that Lamine Yamal's
+answer before the analysis was built. The student doesn't learn how to make
+a radar chart — they learn how to use a radar chart to argue that Lamine Yamal's
 attacking profile is statistically unprecedented for a player his age.
-
-The difference sounds subtle. The results are not.
 
 **Most football analytics content is descriptive.**
 This course is argumentative.
+
+There is a difference between saying *"Yamal scores 0.6 goals per 90"* and saying
+*"Yamal converts above his expected goals by +0.19 — consistently, across two seasons —
+which means the model undervalues his finishing ability."*
+
+The first is a fact. The second is an insight. This course teaches you how to produce
+the second from the first, every time.
 
 ---
 
 ## Roadmap — Coming Soon
 
-- 🎥 **Video walkthroughs** — 15-minute video for each chapter
-- 🎙️ **Audio episodes** — "The analytical question behind this chart" podcast
-- 📝 **Exercises** — Build-it-yourself challenges at the end of each chapter
-- 🏆 **Community showcase** — Best student charts featured in BarcaFutbol newsletter
-- 🎓 **MOOC version** — Full structured course with assessments and certificate
+- 🎥 **Video walkthroughs** — 15-minute video for each chapter, showing the
+  notebook running live with analytical commentary
+- 🎙️ **Audio episodes** — "The analytical question behind this chart" —
+  10-minute podcast per chapter, no code required, just football thinking
+- 📝 **Exercises** — build-it-yourself challenges at the end of each chapter,
+  with a new dataset and a blank template
+- 🏆 **Community showcase** — best student charts featured in the
+  BarcaFutbol newsletter each month
+- 🎓 **Full MOOC** — structured course with assessments, peer review,
+  and a completion certificate
 
 ---
 
-## About BarcaFutbol and HackrLife
+## About This Course
 
-**BarcaFutbol** is an analytical football publication covering FC Barcelona
-through data, tactics, and long-form writing. Available at
-[barcafutbol.com](https://barcafutbol.com).
+This course was built alongside the BarcaFutbol player comparison article
+*"What Do You Get When You Pit Lamine Against Saka?"* — a 3,000-word
+analytical piece with 8 original data visualisations, published April 2026.
 
-**HackrLife Media LLC** is a multi-property media company spanning football
-analytics, AI/growth marketing, art crime, and financial analysis.
-[hackrlife.com](https://hackrlife.com)
+Every chart in the course is a real chart from that real article.
+Every analytical question is the actual question the analysis was trying to answer.
+The course teaches you how the work was built — not a simplified version of it.
 
-The Yamal vs Saka player comparison that this course is built around —
-*"What Do You Get When You Pit Lamine Against Saka?"* — is available
-at barcafutbol.com.
+**BarcaFutbol** covers FC Barcelona through data, tactics, and long-form writing.
+**HackrLife Media LLC** produces analytical content across football, AI, finance
+and growth marketing.
 
 ---
 
 ## Requirements
 
 ```
-matplotlib>=3.8
-scipy>=1.11
-pandas>=2.0
-numpy>=1.26
-jupyter>=1.0
+matplotlib >= 3.8
+scipy      >= 1.11
+pandas     >= 2.0
+numpy      >= 1.26
+jupyter    >= 1.0
 ```
 
-Install everything:
+Install everything in one line:
 ```bash
 pip install matplotlib scipy pandas numpy jupyter
 ```
@@ -247,13 +278,12 @@ pip install matplotlib scipy pandas numpy jupyter
 
 ## Licence
 
-Code: MIT — use it, adapt it, build on it.
-Content and analysis: © 2026 HackrLife Media LLC / BarcaFutbol.
-Data: © Sofascore.
+Code: **MIT** — use it, adapt it, build on it freely.
+Written content and analysis: © 2026 HackrLife Media LLC / BarcaFutbol.
 
 ---
 
 *Built with Python, matplotlib, and the conviction that anyone can learn
-to think analytically about football if you give them the right question.*
+to think analytically about football — if you give them the right question.*
 
 **[Start with Chapter 1 →](Chapter-01-The-Analytical-Question/)**
