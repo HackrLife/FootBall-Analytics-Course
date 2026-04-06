@@ -1,0 +1,13 @@
+player,team,season,position,age,matches_played,minutes_played,goals,assists,goals_per90,assists_per90,gi_per90,shots_per90,shots_on_target_per90,pass_accuracy_pct,key_passes_per90,dribbles_per90,tackles_per90,rating
+Marcus Silva,FC United,2023/24,Winger,22,32,2640,12,8,0.41,0.27,0.68,3.2,1.1,78.4,1.8,3.1,1.2,7.21
+Marcus Silva,FC United,2024/25,Winger,23,36,3024,18,11,0.54,0.33,0.86,3.8,1.4,79.1,2.2,3.6,1.1,7.45
+Lucas Ferreira,City Athletic,2023/24,Winger,24,34,2890,9,14,0.28,0.44,0.72,2.4,0.9,83.2,2.9,2.1,1.4,7.38
+Lucas Ferreira,City Athletic,2024/25,Winger,25,38,3240,11,16,0.31,0.44,0.75,2.6,1.0,84.7,3.1,2.3,1.5,7.52
+James Thornton,Rovers FC,2023/24,Winger,19,28,1890,6,5,0.29,0.24,0.52,2.8,0.9,75.6,1.4,4.2,0.9,6.98
+James Thornton,Rovers FC,2024/25,Winger,20,35,2610,14,9,0.48,0.31,0.79,3.5,1.3,77.2,1.9,4.8,1.0,7.31
+Diego Varela,South United,2023/24,Winger,27,33,2790,15,7,0.48,0.23,0.71,4.1,1.5,76.3,1.6,2.8,1.3,7.28
+Diego Varela,South United,2024/25,Winger,28,30,2430,13,6,0.48,0.22,0.70,4.2,1.6,75.8,1.5,2.6,1.2,7.19
+Amir Hassan,Northern City,2023/24,Winger,26,36,3060,10,12,0.29,0.35,0.65,2.2,0.8,85.9,2.7,1.8,1.6,7.42
+Amir Hassan,Northern City,2024/25,Winger,27,37,3150,12,15,0.34,0.43,0.77,2.5,1.0,86.4,3.0,2.0,1.7,7.61
+Kai Becker,East Town,2023/24,Winger,21,29,2160,8,6,0.33,0.25,0.58,2.9,1.0,80.1,1.7,3.4,1.1,7.05
+Kai Becker,East Town,2024/25,Winger,22,33,2790,11,9,0.35,0.29,0.65,3.1,1.1,81.3,2.0,3.7,1.2,7.18
