@@ -1,0 +1,12 @@
+player,team,age,matches_played,goals_per90,assists_per90,gi_per90,xg_per90,xa_per90,shots_per90,pass_accuracy_pct,keyp_per90,dribbles_per90,tackles_per90,rating,gi_percentile,tier,rank,form
+Marcus Silva,FC United,23,36,0.54,0.33,0.86,0.41,0.27,3.45,79.1,2.35,3.86,1.19,7.45,91,Elite,1,W W W D W
+Carlos Mendez,South United,29,34,0.50,0.22,0.72,0.40,0.21,3.77,74.3,1.81,3.49,1.62,7.22,82,Elite,2,W D W W L
+James Thornton,Rovers FC,20,35,0.48,0.31,0.79,0.36,0.30,3.22,77.2,2.38,6.07,1.28,7.31,86,Elite,3,W W D W W
+Amir Hassan,Northern City,27,37,0.34,0.43,0.77,0.28,0.38,2.51,86.4,3.00,2.00,1.91,7.61,85,Elite,4,D W W W D
+Tom Wheeler,West Athletic,24,31,0.31,0.45,0.77,0.28,0.42,2.93,82.6,3.52,3.21,1.92,7.29,83,Elite,5,W W L W W
+Lucas Ferreira,City Athletic,25,38,0.31,0.44,0.75,0.28,0.41,2.59,84.7,3.27,2.44,1.58,7.52,84,Elite,6,W D W W D
+Diego Varela,South United,28,30,0.48,0.22,0.70,0.44,0.21,4.44,75.8,2.26,3.89,1.81,7.19,74,Above Average,7,L W D W L
+Kai Becker,East Town,22,33,0.35,0.29,0.65,0.32,0.29,3.01,81.3,2.51,4.39,1.52,7.18,68,Above Average,8,D W W L D
+Sam Okafor,City Athletic,26,28,0.12,0.32,0.44,0.29,0.39,3.16,80.4,3.44,2.96,1.93,7.15,42,Average,9,L L W D L
+Elena Rossi,North Town,21,22,0.29,0.23,0.52,0.28,0.24,3.38,76.9,2.57,5.71,1.81,6.88,51,Average,10,W D L W D
+Jin Park,Rovers FC,19,18,0.27,0.18,0.45,0.25,0.19,3.27,73.8,2.45,7.73,2.00,6.71,38,Below Average,11,D L D L W
